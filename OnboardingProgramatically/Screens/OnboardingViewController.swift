@@ -14,9 +14,9 @@ final class OnboardingViewController: UIViewController {
     private let nextButton = UIButton()
     
     private let pages = [
-        PageModel(imageName: "slide1", title: "Delicious Dishes", description: "Experince a variety of amazing dishes from different cultures around the world"),
-        PageModel(imageName: "slide2", title: "World Class Chefs", description: "Our dishes are prepared by only the best"),
-        PageModel(imageName: "slide3", title: "Instant delivery", description: "Your orders will be delivered instantly")
+        PageModel(animationName: "dishes", title: "Delicious Dishes", description: "Experince a variety of amazing dishes from different cultures around the world"),
+        PageModel(animationName: "cook", title: "World Class Chefs", description: "Our dishes are prepared by only the best"),
+        PageModel(animationName: "deliveryGuy", title: "Instant delivery", description: "Your orders will be delivered instantly")
     ]
     private var currentPage = 0 {
         didSet {
@@ -49,7 +49,6 @@ final class OnboardingViewController: UIViewController {
             present(vc, animated: true)
         }
     }
-    
 }
 
 extension OnboardingViewController: UICollectionViewDataSource {

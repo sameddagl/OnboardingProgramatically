@@ -8,11 +8,8 @@
 import UIKit
 
 struct PageModel {
-    let imageName: String
+    let animationName: String
     let title: String
     let description: String
-    
-    var image: UIImage? {
-        return UIImage(named: imageName)
-    }
+
 }
